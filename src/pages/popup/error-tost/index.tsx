@@ -8,7 +8,7 @@ interface ErrorTostProps {
 
 const ErrorTost = ({ message, setFormStatus }: ErrorTostProps) => {
   useEffect(() => {
-    let timer = setTimeout(() => {
+    const timer = setTimeout(() => {
       setFormStatus(false);
     },5000)
   

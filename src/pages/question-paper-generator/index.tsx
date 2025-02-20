@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import MCQForm from "./mcq-form";
-import { CiCirclePlus, CiCircleMinus } from "react-icons/ci";
+import { CiCirclePlus } from "react-icons/ci";
 // import './style.css'
 
 const QuestionPaperGenerator = () => {
