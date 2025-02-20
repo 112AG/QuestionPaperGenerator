@@ -4,7 +4,7 @@ import { CiCirclePlus } from "react-icons/ci";
 // import './style.css'
 
 const QuestionPaperGenerator = () => {
-  const [mcq, setMcq] = useState([1]);
+  const [mcq, setMcq] = useState<number[]>([1]);
   console.log(mcq);
   return (
     <div className="bg-zinc-200 h-screen overflow-scroll">
