@@ -5,8 +5,8 @@ import { AppContext } from "../AppContextProvider";
 
 const Header = () => {
   const {firstletter, handleLogOut} = useContext(AppContext);
-  let alpha = firstletter[0];
-  let letter = alpha.toUpperCase();
+  const alpha = firstletter[0];
+  const letter = alpha.toUpperCase();
   return (<>
   <div className="flex justify-between px-4 items-center py-2 bg-white shadow-lg sticky top-0 z-20">
      <div className="flex gap-2 items-center">

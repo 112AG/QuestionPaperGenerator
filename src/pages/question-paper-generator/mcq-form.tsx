@@ -1,8 +1,13 @@
 import React from "react";
 import { CiCircleMinus } from "react-icons/ci";
 
+interface MCQFormProps {
+    count: number;
+    setMcq: React.Dispatch<React.SetStateAction<number[]>>;
+    mcq: number[];
+}
 
-const MCQForm = ({ count, setMcq , mcq}: any) => {
+const MCQForm = ({ count, setMcq , mcq}: MCQFormProps) => {
     console.log("mcq", mcq)
     const removeMcqHandler=()=>{
         console.log("Handler triggered.", mcq)

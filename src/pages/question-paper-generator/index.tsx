@@ -51,7 +51,7 @@ const QuestionPaperGenerator = () => {
 
         {mcq.map((item, index) => {
           return (
-            <div className="border border-zinc-500 w-[99%] mx-auto p-2 rounded-lg mt-5 boxShadow">
+            <div key={index} className="border border-zinc-500 w-[99%] mx-auto p-2 rounded-lg mt-5 boxShadow">
               <div className="mt-5 w-full">
                 <select name={`type${index}`} className="w-full block py-2.5 px-5 rounded-lg">
                   <option value="long">Long Question</option>
